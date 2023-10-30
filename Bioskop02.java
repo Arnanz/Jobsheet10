@@ -16,9 +16,8 @@ public class Bioskop02 {
         System.out.printf("%s \t %s \n", penonton[1][0], penonton[1][1]);
         System.out.printf("%s \t %s \n", penonton[2][0], penonton[2][1]);
         System.out.printf("%s \t %s \n", penonton[3][0], penonton[3][1]);
-            System.out.println("Penonton pada baris ke-3: ");
-            for (String i : penonton[2]) {
-                System.out.println(i);
+            for (int i =0; i < penonton.length; i++) {
+                System.out.println("Penonton pada baris ke-" + (i+1) + ": " + String.join(",", penonton[i]));
             }
             System.out.println(penonton.length);
                 for (String[] barisPenonton : penonton) {
